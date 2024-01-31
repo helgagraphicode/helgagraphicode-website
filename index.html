@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelgaGraphiCode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">HelgaGraphiCode</td>
+                <td id="navigation">
+                    <a href="#work">GALLERY</a>
+                    <a href="#bio">ABOUT</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="#contact">CONTACT</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+          <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+            <h1>WORKSHOP</h1>
+            <p>Membuat Website dengan HTML dan CSS serta Hosting dengan Domain Sendiri</p>
+            <button class="btn_one" onclick="window.location.href='https://discord.gg/R4nEhC7rW8'">JOIN NOW</button><br>
+            <table>
+              <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;">
+                  <a class="social" href="https://discord.gg/ehVFZtZC" target="_blank">
+                    <i class="fab fa-discord"></i>
+                  </a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;">
+                  <a class="social" href="https://www.youtube.com/@HelgaGraphiCode1295" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;">
+                  <a class="social" href="https://www.instagram.com/helgagraphicode" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+      </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>ALBUM</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src="">
+            <img onclick="magnify($(this).attr('src'))" src=""">
+            <img onclick="magnify($(this).attr('src'))" src="">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>ABOUT</h1>
+        <p style="text-align: justify;">
+            HelgaGraphiCode adalah komunitas yang berfokus pada eksplorasi dan pembahasan seputar dunia teknologi informasi. Dengan fokus utama pada desain, coding, dan editing, kami menyediakan sumber daya terkini dan inspiratif bagi para penggemar IT.
+        
+            Kami hadir sebagai tempat bagi para desainer grafis dan visual untuk menemukan ide-ide kreatif, tutorial desain, dan tren terbaru. Bagi pengembang dan programmer, HelgaGraphiCode menyajikan beragam konten coding, mulai dari pemrograman dasar hingga tips terkini dalam dunia pengembangan perangkat lunak.
+        
+            Selain itu, kami turut menjelajahi dunia editing multimedia, memberikan panduan praktis tentang teknik-teknik editing foto, video, dan audio. HelgaGraphiCode juga memberikan kesempatan untuk pengembangan diri melalui kelas-kelas daring, baik yang gratis maupun berlangganan premium.
+        
+            Bergabunglah dengan komunitas kami dan temukan inspirasi, tukar pikiran, serta jalin hubungan dengan sesama pencinta teknologi. Visi kami adalah menjadi sumber daya utama bagi mereka yang ingin mengasah keterampilan teknologi dan kreativitas, membentuk masa depan yang inovatif dan penuh inspirasi. Mari berkreasi bersama di HelgaGraphiCode!
+        </p>        
+    </div>
+    <div id="contact">
+        <h1>CONTACT</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; helgagraphicode@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Pekanbaru - Riau - Indonesia<br>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        copyright©helgateam <br> <a href="https://github.com/helgagraphicode">HelgaGraphiCode</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
